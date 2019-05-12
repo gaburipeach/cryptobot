@@ -1,0 +1,7 @@
+setuptools
+requests>=2.4.0
+python-dateutil
+pandas
+numpy
+sklearn
+matplotlib
