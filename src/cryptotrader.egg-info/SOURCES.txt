@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/cryptotrader/__init__.py
+src/cryptotrader.egg-info/PKG-INFO
+src/cryptotrader.egg-info/SOURCES.txt
+src/cryptotrader.egg-info/dependency_links.txt
+src/cryptotrader.egg-info/not-zip-safe
+src/cryptotrader.egg-info/requires.txt
+src/cryptotrader.egg-info/top_level.txt
+src/cryptotrader/api/__init__.py
+src/cryptotrader/api/common.py
+src/cryptotrader/api/exceptions.py
+src/cryptotrader/api/kraken.py
