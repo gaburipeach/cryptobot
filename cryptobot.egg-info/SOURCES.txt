@@ -1,9 +1,0 @@
-README.md
-setup.py
-cryptobot.egg-info/PKG-INFO
-cryptobot.egg-info/SOURCES.txt
-cryptobot.egg-info/dependency_links.txt
-cryptobot.egg-info/requires.txt
-cryptobot.egg-info/top_level.txt
-test/__init__.py
-test/api_kraken_test.py
