@@ -1,0 +1,2 @@
+# cryptobot
+Cryptocurrency trading strategies
