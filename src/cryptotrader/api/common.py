@@ -13,7 +13,7 @@ headers = {    # common HTTPS headers
 
 class ExchangeWrapper(metaclass=abc.ABCMeta):
 
-    def __init__(self, apikey, secret, timeout):
+    def __init__(self, apikey, secret, timeout, user_agent=None):
         self.apikey = apikey
         self.secret = secret
 

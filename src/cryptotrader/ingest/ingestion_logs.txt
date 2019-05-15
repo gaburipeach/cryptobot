@@ -1,0 +1,459 @@
+Found proxy: <Proxy US 0.08s [HTTPS] 38.86.51.101:3128>
+Found proxy: <Proxy US 0.08s [HTTPS] 38.86.51.100:3128>
+Found proxy: <Proxy US 0.08s [HTTPS] 198.161.237.181:80>
+Found proxy: <Proxy US 0.16s [HTTPS] 68.183.167.235:3128>
+Found proxy: <Proxy CA 0.17s [HTTPS] 204.191.85.34:8080>
+Found proxy: <Proxy GR 0.26s [HTTPS] 178.128.166.141:8080>
+Found proxy: <Proxy NL 0.19s [HTTPS] 163.172.220.221:8888>
+Found proxy: <Proxy GB 0.27s [HTTPS] 185.85.118.67:8080>
+Found proxy: <Proxy FR 0.30s [HTTPS] 145.239.169.44:1080>
+Found proxy: <Proxy FR 0.35s [HTTPS] 195.25.28.67:8080>
+Found proxy: <Proxy UA 0.41s [HTTPS] 176.108.104.84:30015>
+Found proxy: <Proxy BR 0.41s [HTTPS] 177.44.139.54:59864>
+Found proxy: <Proxy FR 0.42s [HTTPS] 176.31.69.176:1080>
+Found proxy: <Proxy RU 0.36s [HTTPS] 185.22.174.69:10010>
+Found proxy: <Proxy RO 0.44s [HTTPS] 188.173.225.165:45633>
+Found proxy: <Proxy PL 0.47s [HTTPS] 79.162.248.100:38004>
+Found proxy: <Proxy AL 0.39s [HTTPS] 109.69.1.16:45827>
+Found proxy: <Proxy CA 0.55s [HTTPS] 207.148.72.45:8080>
+Found proxy: <Proxy DE 0.57s [HTTPS] 138.201.223.250:31288>
+Found proxy: <Proxy US 0.59s [HTTPS] 24.172.34.114:49492>
+Found proxy: <Proxy IN 0.61s [HTTPS] 59.91.121.113:50086>
+Found proxy: <Proxy HK 0.54s [HTTPS] 221.126.249.101:8080>
+Found proxy: <Proxy BR 0.65s [HTTPS] 187.53.61.50:80>
+Found proxy: <Proxy ID 0.65s [HTTPS] 114.57.185.12:52942>
+Found proxy: <Proxy UA 0.66s [HTTPS] 37.221.157.98:43570>
+Found proxy: <Proxy IN 0.65s [HTTPS] 103.251.225.13:34052>
+Found proxy: <Proxy ID 0.58s [HTTPS] 180.250.182.50:8080>
+Found proxy: <Proxy IT 0.68s [HTTPS] 185.144.120.66:80>
+Found proxy: <Proxy AO 0.71s [HTTPS] 197.216.2.9:8080>
+Found proxy: <Proxy BR 0.71s [HTTPS] 187.32.4.66:8080>
+Found proxy: <Proxy TH 0.81s [HTTPS] 223.27.210.101:8080>
+Found proxy: <Proxy IN 0.84s [HTTPS] 61.14.229.122:32940>
+Found proxy: <Proxy VN 0.85s [HTTPS] 118.70.219.124:53281>
+Found proxy: <Proxy UA 0.79s [HTTPS] 212.115.224.71:53281>
+Found proxy: <Proxy TH 0.90s [HTTPS] 1.2.169.44:48545>
+Found proxy: <Proxy IN 0.84s [HTTPS] 103.12.246.10:8080>
+Found proxy: <Proxy ID 0.92s [HTTPS] 175.184.249.106:41959>
+Found proxy: <Proxy ID 0.89s [HTTPS] 202.162.201.94:53281>
+Found proxy: <Proxy ID 0.97s [HTTPS] 202.150.139.46:36792>
+Found proxy: <Proxy TR 0.97s [HTTPS] 95.0.219.198:23500>
+Found proxy: <Proxy ID 1.04s [HTTPS] 114.57.49.66:53281>
+Found proxy: <Proxy MX 0.96s [HTTPS] 200.66.94.147:8080>
+Found proxy: <Proxy IN 1.09s [HTTPS] 103.250.158.21:48484>
+Found proxy: <Proxy UA 1.01s [HTTPS] 91.221.252.18:8080>
+Found proxy: <Proxy RU 1.11s [HTTPS] 79.135.81.45:57470>
+Found proxy: <Proxy BD 1.11s [HTTPS] 182.160.124.26:47304>
+Found proxy: <Proxy RU 1.05s [HTTPS] 94.230.243.6:8080>
+Found proxy: <Proxy RU 1.13s [HTTPS] 46.0.61.152:53281>
+Found proxy: <Proxy AE 1.20s [HTTPS] 185.132.179.116:8080>
+Found proxy: <Proxy IN 1.20s [HTTPS] 103.44.136.9:46706>
+https://145.239.169.44:1080
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:847)'),))
+Removing Proxy ID
+https://109.69.1.16:45827
+https://185.85.118.67:8080
+[~] Successfully retrieved Order Book
+1557898093.1439664: Writing Order Book Row
+[~] Proxy URL: https://185.85.118.67:8080. User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1623.0 Safari/537.36.
+[~] Successfully retrieved Trade Histories
+1557898093.4741666: Writing Trade History Row
+[~] Proxy URL: https://109.69.1.16:45827. User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36.
+https://1.2.169.44:48545
+https://59.91.121.113:50086
+[~] Successfully retrieved Order Book
+1557898097.0107424: Writing Order Book Row
+[~] Proxy URL: https://1.2.169.44:48545. User Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2224.3 Safari/537.36.
+https://200.66.94.147:8080
+[~] Successfully retrieved Trade Histories
+1557898098.5525298: Writing Trade History Row
+[~] Proxy URL: https://59.91.121.113:50086. User Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1468.0 Safari/537.36.
+https://182.160.124.26:47304
+[~] Successfully retrieved Order Book
+1557898101.351945: Writing Order Book Row
+[~] Proxy URL: https://200.66.94.147:8080. User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.62 Safari/537.36.
+https://103.44.136.9:46706
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response',)))
+Removing Proxy ID
+https://59.91.121.113:50086
+[~] Successfully retrieved Trade Histories
+1557898106.9756677: Writing Trade History Row
+[~] Proxy URL: https://59.91.121.113:50086. User Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/44.0.2403.155 Safari/537.36.
+https://221.126.249.101:8080
+403 Client Error: Forbidden for url: https://api.kraken.com/0/public/Depth?pair=BCHUSD&count=50
+[~] Error when request: Expecting value: line 1 column 1 (char 0)
+Removing Proxy ID
+https://138.201.223.250:31288
+[~] Successfully retrieved Order Book
+1557898110.5850997: Writing Order Book Row
+[~] Proxy URL: https://103.44.136.9:46706. User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:21.0) Gecko/20130330 Firefox/21.0.
+https://178.128.166.141:8080
+[~] Successfully retrieved Trade Histories
+1557898112.8471506: Writing Trade History Row
+[~] Proxy URL: https://138.201.223.250:31288. User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.1.
+[~] Successfully retrieved Order Book
+1557898113.1914492: Writing Order Book Row
+[~] Proxy URL: https://178.128.166.141:8080. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36.
+https://103.250.158.21:48484
+https://185.22.174.69:10010
+[~] Successfully retrieved Order Book
+1557898116.1897886: Writing Order Book Row
+[~] Proxy URL: https://185.22.174.69:10010. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36.
+https://61.14.229.122:32940
+[~] Successfully retrieved Order Book
+1557898121.5995898: Writing Order Book Row
+[~] Proxy URL: https://61.14.229.122:32940. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36.
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+Removing Proxy ID
+https://94.230.243.6:8080
+https://176.31.69.176:1080
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:847)'),))
+Removing Proxy ID
+https://202.150.139.46:36792
+[~] Successfully retrieved Order Book
+1557898128.3569705: Writing Order Book Row
+[~] Proxy URL: https://94.230.243.6:8080. User Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36.
+https://79.162.248.100:38004
+[~] Successfully retrieved Order Book
+1557898131.8484504: Writing Order Book Row
+[~] Proxy URL: https://79.162.248.100:38004. User Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36.
+https://95.0.219.198:23500
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+Removing Proxy ID
+https://68.183.167.235:3128
+[~] Successfully retrieved Trade Histories
+1557898138.2700758: Writing Trade History Row
+[~] Proxy URL: https://68.183.167.235:3128. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1944.0 Safari/537.36.
+https://109.69.1.16:45827
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fddbc6fcac8>, 'Connection to 95.0.219.198 timed out. (connect timeout=8)'))
+Removing Proxy ID
+https://37.221.157.98:43570
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fddbc6a91d0>, 'Connection to 109.69.1.16 timed out. (connect timeout=8)'))
+Removing Proxy ID
+https://138.201.223.250:31288
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fddbc6b8630>, 'Connection to 37.221.157.98 timed out. (connect timeout=8)'))
+Removing Proxy ID
+[~] Successfully retrieved Trade Histories
+1557898150.17404: Writing Trade History Row
+[~] Proxy URL: https://138.201.223.250:31288. User Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/44.0.2403.155 Safari/537.36.
+https://198.161.237.181:80
+https://185.144.120.66:80
+[~] Successfully retrieved Order Book
+1557898151.3573296: Writing Order Book Row
+[~] Proxy URL: https://198.161.237.181:80. User Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36.
+https://185.22.174.69:10010
+[~] Successfully retrieved Order Book
+1557898154.431478: Writing Order Book Row
+[~] Proxy URL: https://185.22.174.69:10010. User Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1468.0 Safari/537.36.
+[~] Successfully retrieved Trade Histories
+1557898154.9300895: Writing Trade History Row
+[~] Proxy URL: https://185.144.120.66:80. User Agent: Opera/9.80 (Windows NT 6.1; U; en-GB) Presto/2.7.62 Version/11.00.
+https://200.66.94.147:8080
+https://197.216.2.9:8080
+[~] Successfully retrieved Order Book
+1557898158.877902: Writing Order Book Row
+[~] Proxy URL: https://200.66.94.147:8080. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1309.0 Safari/537.17.
+[~] Successfully retrieved Trade Histories
+1557898159.140868: Writing Trade History Row
+[~] Proxy URL: https://197.216.2.9:8080. User Agent: Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0.
+https://91.221.252.18:8080
+https://38.86.51.100:3128
+[~] Successfully retrieved Trade Histories
+1557898160.904223: Writing Trade History Row
+[~] Proxy URL: https://38.86.51.100:3128. User Agent: Mozilla/5.0 (Windows NT 6.4; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2225.0 Safari/537.36.
+https://185.144.120.66:80
+[~] Successfully retrieved Trade Histories
+1557898166.342153: Writing Trade History Row
+[~] Proxy URL: https://185.144.120.66:80. User Agent: Mozilla/5.0 (X11; NetBSD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36.
+https://94.230.243.6:8080
+[~] Successfully retrieved Order Book
+1557898167.5016844: Writing Order Book Row
+[~] Proxy URL: https://91.221.252.18:8080. User Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:27.0) Gecko/20121011 Firefox/27.0.
+https://185.132.179.116:8080
+[~] Successfully retrieved Order Book
+1557898172.8080225: Writing Order Book Row
+[~] Proxy URL: https://185.132.179.116:8080. User Agent: Mozilla/5.0 (Windows NT 6.4; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2225.0 Safari/537.36.
+https://38.86.51.101:3128
+[~] Successfully retrieved Order Book
+1557898174.2987661: Writing Order Book Row
+[~] Proxy URL: https://38.86.51.101:3128. User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.62 Safari/537.36.
+https://202.162.201.94:53281
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fddbc691f98>, 'Connection to 94.230.243.6 timed out. (connect timeout=8)'))
+Removing Proxy ID
+https://207.148.72.45:8080
+[~] Successfully retrieved Trade Histories
+1557898178.582761: Writing Trade History Row
+[~] Proxy URL: https://207.148.72.45:8080. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:24.0) Gecko/20100101 Firefox/24.0.
+https://46.0.61.152:53281
+[~] Successfully retrieved Order Book
+1557898179.8392768: Writing Order Book Row
+[~] Proxy URL: https://202.162.201.94:53281. User Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36.
+https://103.12.246.10:8080
+[~] Successfully retrieved Trade Histories
+1557898182.4758801: Writing Trade History Row
+[~] Proxy URL: https://46.0.61.152:53281. User Agent: Mozilla/5.0 (Windows NT 4.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36.
+https://185.85.118.67:8080
+[~] Successfully retrieved Trade Histories
+1557898184.3952038: Writing Trade History Row
+[~] Proxy URL: https://185.85.118.67:8080. User Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36.
+https://204.191.85.34:8080
+[~] Successfully retrieved Trade Histories
+1557898186.1214974: Writing Trade History Row
+[~] Proxy URL: https://204.191.85.34:8080. User Agent: Mozilla/5.0 (compatible, MSIE 11, Windows NT 6.3; Trident/7.0;  rv:11.0) like Gecko.
+https://197.216.2.9:8080
+[~] Successfully retrieved Trade Histories
+1557898190.1183014: Writing Trade History Row
+[~] Proxy URL: https://197.216.2.9:8080. User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/4E423F.
+[~] Successfully retrieved Order Book
+1557898190.155544: Writing Order Book Row
+[~] Proxy URL: https://103.12.246.10:8080. User Agent: Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.0; Trident/4.0; InfoPath.1; SV1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 3.0.04506.30).
+https://200.66.94.147:8080
+https://185.144.120.66:80
+[~] Successfully retrieved Trade Histories
+1557898195.3126023: Writing Trade History Row
+[~] Proxy URL: https://200.66.94.147:8080. User Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.2 Safari/537.36.
+https://187.32.4.66:8080
+[~] Successfully retrieved Trade Histories
+1557898201.913154: Writing Trade History Row
+[~] Proxy URL: https://187.32.4.66:8080. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.13+ (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2.
+[~] Successfully retrieved Order Book
+1557898202.0888717: Writing Order Book Row
+[~] Proxy URL: https://185.144.120.66:80. User Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0).
+https://185.132.179.116:8080
+https://212.115.224.71:53281
+[~] Successfully retrieved Trade Histories
+1557898207.243127: Writing Trade History Row
+[~] Proxy URL: https://185.132.179.116:8080. User Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.2117.157 Safari/537.36.
+https://223.27.210.101:8080
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:847)'),))
+Removing Proxy ID
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fddbc6b8eb8>, 'Connection to 212.115.224.71 timed out. (connect timeout=8)'))
+Removing Proxy ID
+https://38.86.51.100:3128
+[~] Successfully retrieved Trade Histories
+1557898211.711812: Writing Trade History Row
+[~] Proxy URL: https://38.86.51.100:3128. User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36.
+https://79.162.248.100:38004
+https://188.173.225.165:45633
+[~] Successfully retrieved Order Book
+1557898214.3720996: Writing Order Book Row
+[~] Proxy URL: https://79.162.248.100:38004. User Agent: Opera/9.80 (Windows NT 6.1; Opera Tablet/15165; U; en) Presto/2.8.149 Version/11.1.
+https://38.86.51.100:3128
+[~] Successfully retrieved Order Book
+1557898215.6005564: Writing Order Book Row
+[~] Proxy URL: https://38.86.51.100:3128. User Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36 Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.10.
+https://163.172.220.221:8888
+[~] Successfully retrieved Order Book
+1557898218.29999: Writing Order Book Row
+[~] Proxy URL: https://163.172.220.221:8888. User Agent: Mozilla/5.0 (X11; NetBSD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36.
+https://1.2.169.44:48545
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fddbc708780>, 'Connection to 188.173.225.165 timed out. (connect timeout=8)'))
+Removing Proxy ID
+https://46.0.61.152:53281
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+Removing Proxy ID
+https://185.22.174.69:10010
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fddbc69d160>, 'Connection to 46.0.61.152 timed out. (connect timeout=8)'))
+Removing Proxy ID
+[~] Successfully retrieved Order Book
+1557898230.612549: Writing Order Book Row
+[~] Proxy URL: https://185.22.174.69:10010. User Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36.
+https://185.22.174.69:10010
+https://185.132.179.116:8080
+[~] Successfully retrieved Trade Histories
+1557898231.8061275: Writing Trade History Row
+[~] Proxy URL: https://185.22.174.69:10010. User Agent: Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0.
+https://68.183.167.235:3128
+[~] Successfully retrieved Trade Histories
+1557898233.2135704: Writing Trade History Row
+[~] Proxy URL: https://68.183.167.235:3128. User Agent: Opera/9.80 (Windows NT 6.1; U; es-ES) Presto/2.9.181 Version/12.00.
+https://138.201.223.250:31288
+[~] Successfully retrieved Order Book
+1557898235.9243903: Writing Order Book Row
+[~] Proxy URL: https://185.132.179.116:8080. User Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.90 Safari/537.36.
+https://114.57.49.66:53281
+[~] Successfully retrieved Trade Histories
+1557898237.3752902: Writing Trade History Row
+[~] Proxy URL: https://138.201.223.250:31288. User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36.
+https://185.85.118.67:8080
+[~] Successfully retrieved Trade Histories
+1557898239.333137: Writing Trade History Row
+[~] Proxy URL: https://185.85.118.67:8080. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36.
+https://91.221.252.18:8080
+[~] Successfully retrieved Order Book
+1557898242.6560223: Writing Order Book Row
+[~] Proxy URL: https://114.57.49.66:53281. User Agent: Mozilla/5.0 (Windows NT 4.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36.
+https://198.161.237.181:80
+[~] Successfully retrieved Order Book
+1557898244.1164079: Writing Order Book Row
+[~] Proxy URL: https://198.161.237.181:80. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1664.3 Safari/537.36.
+https://176.108.104.84:30015
+[~] Successfully retrieved Trade Histories
+1557898248.3659427: Writing Trade History Row
+[~] Proxy URL: https://91.221.252.18:8080. User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36.
+https://138.201.223.250:31288
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+Removing Proxy ID
+https://200.66.94.147:8080
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+Removing Proxy ID
+https://61.14.229.122:32940
+[~] Successfully retrieved Order Book
+1557898261.8430037: Writing Order Book Row
+[~] Proxy URL: https://200.66.94.147:8080. User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.62 Safari/537.36.
+https://187.32.4.66:8080
+[~] Successfully retrieved Trade Histories
+1557898266.9516032: Writing Trade History Row
+[~] Proxy URL: https://61.14.229.122:32940. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36.
+[~] Successfully retrieved Order Book
+1557898267.4533193: Writing Order Book Row
+[~] Proxy URL: https://187.32.4.66:8080. User Agent: Mozilla/5.0 (Windows NT 4.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36.
+https://103.12.246.10:8080
+https://38.86.51.101:3128
+[~] Successfully retrieved Order Book
+1557898268.9673269: Writing Order Book Row
+[~] Proxy URL: https://38.86.51.101:3128. User Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.2309.372 Safari/537.36.
+https://197.216.2.9:8080
+[~] Successfully retrieved Order Book
+1557898272.9231102: Writing Order Book Row
+[~] Proxy URL: https://197.216.2.9:8080. User Agent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1467.0 Safari/537.36.
+https://103.44.136.9:46706
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(104, 'Connection reset by peer')))
+Removing Proxy ID
+[~] Successfully retrieved Order Book
+1557898279.1139293: Writing Order Book Row
+[~] Proxy URL: https://103.44.136.9:46706. User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36.
+https://114.57.185.12:52942
+https://185.132.179.116:8080
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fddbc723fd0>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+Removing Proxy ID
+403 Client Error: Forbidden for url: https://api.kraken.com/0/public/Depth?pair=BCHUSD&count=50
+[~] Error when request: Expecting value: line 1 column 1 (char 0)
+Removing Proxy ID
+https://177.44.139.54:59864
+https://79.162.248.100:38004
+[~] Successfully retrieved Order Book
+1557898283.388381: Writing Order Book Row
+[~] Proxy URL: https://177.44.139.54:59864. User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.60 Safari/537.17.
+[~] Successfully retrieved Trade Histories
+1557898284.1906571: Writing Trade History Row
+[~] Proxy URL: https://79.162.248.100:38004. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36.
+https://207.148.72.45:8080
+https://187.32.4.66:8080
+[~] Successfully retrieved Order Book
+1557898286.6694055: Writing Order Book Row
+[~] Proxy URL: https://207.148.72.45:8080. User Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.2117.157 Safari/537.36.
+https://163.172.220.221:8888
+[~] Successfully retrieved Order Book
+1557898289.3642557: Writing Order Book Row
+[~] Proxy URL: https://163.172.220.221:8888. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36.
+https://195.25.28.67:8080
+[~] Successfully retrieved Trade Histories
+1557898290.4452744: Writing Trade History Row
+[~] Proxy URL: https://187.32.4.66:8080. User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36.
+https://61.14.229.122:32940
+[~] Successfully retrieved Order Book
+1557898291.6213212: Writing Order Book Row
+[~] Proxy URL: https://195.25.28.67:8080. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:24.0) Gecko/20100101 Firefox/24.0.
+https://195.25.28.67:8080
+[~] Successfully retrieved Order Book
+1557898293.700104: Writing Order Book Row
+[~] Proxy URL: https://195.25.28.67:8080. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1664.3 Safari/537.36.
+https://185.144.120.66:80
+[~] Successfully retrieved Trade Histories
+1557898296.8073997: Writing Trade History Row
+[~] Proxy URL: https://61.14.229.122:32940. User Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36.
+https://204.191.85.34:8080
+[~] Successfully retrieved Trade Histories
+1557898298.516969: Writing Trade History Row
+[~] Proxy URL: https://204.191.85.34:8080. User Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36.
+[~] Successfully retrieved Order Book
+1557898299.0583997: Writing Order Book Row
+[~] Proxy URL: https://185.144.120.66:80. User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36.
+https://103.251.225.13:34052
+https://59.91.121.113:50086
+[~] Successfully retrieved Trade Histories
+1557898301.8095696: Writing Trade History Row
+[~] Proxy URL: https://103.251.225.13:34052. User Agent: Mozilla/5.0 (X11; NetBSD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36.
+https://180.250.182.50:8080
+[~] Successfully retrieved Order Book
+1557898302.9995525: Writing Order Book Row
+[~] Proxy URL: https://59.91.121.113:50086. User Agent: Opera/9.80 (X11; Linux i686; U; ru) Presto/2.8.131 Version/11.11.
+https://163.172.220.221:8888
+[~] Successfully retrieved Order Book
+1557898305.715409: Writing Order Book Row
+[~] Proxy URL: https://163.172.220.221:8888. User Agent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4.
+[~] Successfully retrieved Trade Histories
+1557898305.7872643: Writing Trade History Row
+[~] Proxy URL: https://180.250.182.50:8080. User Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36.
+https://163.172.220.221:8888
+https://24.172.34.114:49492
+[~] Successfully retrieved Order Book
+1557898307.605238: Writing Order Book Row
+[~] Proxy URL: https://163.172.220.221:8888. User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36.
+https://195.25.28.67:8080
+[~] Successfully retrieved Order Book
+1557898310.4206796: Writing Order Book Row
+[~] Proxy URL: https://195.25.28.67:8080. User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.517 Safari/537.36.
+https://195.25.28.67:8080
+[~] Successfully retrieved Order Book
+1557898312.492907: Writing Order Book Row
+[~] Proxy URL: https://195.25.28.67:8080. User Agent: Mozilla/5.0 (Windows NT 6.1; rv:27.3) Gecko/20130101 Firefox/27.3.
+https://178.128.166.141:8080
+[~] Successfully retrieved Order Book
+1557898314.3658128: Writing Order Book Row
+[~] Proxy URL: https://178.128.166.141:8080. User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36.
+https://79.135.81.45:57470
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+Removing Proxy ID
+https://68.183.167.235:3128
+[~] Successfully retrieved Trade Histories
+1557898317.304783: Writing Trade History Row
+[~] Proxy URL: https://68.183.167.235:3128. User Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1468.0 Safari/537.36.
+https://163.172.220.221:8888
+[~] Successfully retrieved Trade Histories
+1557898319.9335477: Writing Trade History Row
+[~] Proxy URL: https://163.172.220.221:8888. User Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:16.0.1) Gecko/20121011 Firefox/21.0.1.
+https://207.148.72.45:8080
+[~] Successfully retrieved Trade Histories
+1557898323.3003716: Writing Trade History Row
+[~] Proxy URL: https://207.148.72.45:8080. User Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36.
+https://68.183.167.235:3128
+[~] Successfully retrieved Trade Histories
+1557898324.7044466: Writing Trade History Row
+[~] Proxy URL: https://68.183.167.235:3128. User Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2224.3 Safari/537.36.
+https://185.144.120.66:80
+403 Client Error: Forbidden for url: https://api.kraken.com/0/public/Depth?pair=BCHUSD&count=50
+[~] Error when request: Expecting value: line 1 column 1 (char 0)
+Removing Proxy ID
+https://204.191.85.34:8080
+[~] Successfully retrieved Order Book
+1557898328.8058994: Writing Order Book Row
+[~] Proxy URL: https://204.191.85.34:8080. User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36.
+https://185.85.118.67:8080
+[~] Successfully retrieved Trade Histories
+1557898330.4225402: Writing Trade History Row
+[~] Proxy URL: https://185.144.120.66:80. User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36.
+https://177.44.139.54:59864
+[~] Successfully retrieved Order Book
+1557898331.4558527: Writing Order Book Row
+[~] Proxy URL: https://185.85.118.67:8080. User Agent: Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; .NET CLR 2.7.58687; SLCC2; Media Center PC 5.0; Zune 3.4; Tablet PC 3.6; InfoPath.3).
+https://175.184.249.106:41959
+[~] Successfully retrieved Trade Histories
+1557898333.425325: Writing Trade History Row
+[~] Proxy URL: https://177.44.139.54:59864. User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36.
+https://38.86.51.100:3128
+[~] Successfully retrieved Trade Histories
+1557898335.069332: Writing Trade History Row
+[~] Proxy URL: https://38.86.51.100:3128. User Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.90 Safari/537.36.
+https://180.250.182.50:8080
+[~] Successfully retrieved Trade Histories
+1557898338.7459197: Writing Trade History Row
+[~] Proxy URL: https://180.250.182.50:8080. User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.62 Safari/537.36.
+https://187.32.4.66:8080
+[~] Error when request: HTTPSConnectionPool(host='api.kraken.com', port=443): Max retries exceeded with url: /0/public/Depth?pair=BCHUSD&count=50 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fddbc6da5f8>, 'Connection to 175.184.249.106 timed out. (connect timeout=8)'))
+Removing Proxy ID
+https://38.86.51.101:3128
+[~] Successfully retrieved Order Book
+1557898341.953692: Writing Order Book Row
+[~] Proxy URL: https://38.86.51.101:3128. User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36.

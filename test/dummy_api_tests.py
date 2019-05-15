@@ -20,9 +20,9 @@ def test_outputs():
 	print(kraken.get_markets())
 
 	print("=============================================")
-	print("Kraken Get OHLCV data")
+	print("Kraken Get order data")
 	print("=============================================")
-	print(kraken.get_market_ohlcv_data('bch-usd', 1, 21600))
+	print(kraken.get_market_trade_history('bch-usd'))
 
 
 	assert False

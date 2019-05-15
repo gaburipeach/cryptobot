@@ -1,8 +1,0 @@
-README.md
-setup.py
-src/cryptobot.egg-info/PKG-INFO
-src/cryptobot.egg-info/SOURCES.txt
-src/cryptobot.egg-info/dependency_links.txt
-src/cryptobot.egg-info/not-zip-safe
-src/cryptobot.egg-info/requires.txt
-src/cryptobot.egg-info/top_level.txt

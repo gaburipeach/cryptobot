@@ -56,6 +56,11 @@ def test_get_market_trade_history():
     assert isinstance(trade_history[0], list)
 
 
+def test_kraken_user_agent_change():
+    with pytest.raises(APIError):
+        k = Kraken(user_agent=5)
+
+
 @private
 def test_get_balances(apikey, secret):
 

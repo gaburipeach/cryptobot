@@ -3,9 +3,9 @@ import hashlib
 import time
 import base64
 import requests
-from api.common import (headers, ExchangeWrapper,
+from cryptotrader.api.common import (headers, ExchangeWrapper,
                               NormalizedExchangeWrapper)
-from api.exceptions import (InvalidBaseCurrencyError,
+from cryptotrader.api.exceptions import (InvalidBaseCurrencyError,
                                   InvalidDelimiterError,
                                   APIError)
 from re import findall
@@ -32,9 +32,8 @@ class Kraken(ExchangeWrapper):
     def get_base_currencies(self):
         raise NotImplementedError
 
-    def __init__(self, apikey=None, secret=None, timeout=None, proxy=None):
+    def __init__(self, apikey=None, secret=None, timeout=None, proxy=None, user_agent=None):
         '''initialize class'''
-
         if apikey and secret:
             self.apikey = apikey.encode('utf-8')
             self.secret = secret.encode('utf-8')
@@ -47,6 +46,11 @@ class Kraken(ExchangeWrapper):
             self.timeout = (8, 15)
         else:
             self.timeout = timeout
+
+        if user_agent:
+            self.user_agent = user_agent
+        else:
+            self.user_agent = None
 
         self.api_session = requests.Session()
 
@@ -64,6 +68,8 @@ class Kraken(ExchangeWrapper):
         '''call api'''
 
         try:
+            # Changed Check later
+            self.headers = {'User-Agent': self.user_agent}
             result = self.api_session.get(url, headers=self.headers, 
                                           params=params, timeout=self.timeout,
                                           proxies=self.proxy)
@@ -314,8 +320,8 @@ class Kraken(ExchangeWrapper):
 
 class KrakenNormalized(Kraken, NormalizedExchangeWrapper):
 
-    def __init__(self, apikey=None, secret=None, timeout=None, proxy=None):
-        super(KrakenNormalized, self).__init__(apikey, secret, timeout, proxy)
+    def __init__(self, apikey=None, secret=None, timeout=None, proxy=None, user_agent=None):
+        super(KrakenNormalized, self).__init__(apikey, secret, timeout, proxy, user_agent)
 
     _names = {  # kraken has unique quote names, this will normalize it
         'GNO': 'GNO',
