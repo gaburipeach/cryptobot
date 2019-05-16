@@ -39,11 +39,15 @@ class Kraken(ExchangeWrapper):
             self.secret = secret.encode('utf-8')
 
         if proxy:
-            assert proxy.startswith('https'), {'Error': 'Only https proxies supported.'}
-        self.proxy = {'https': proxy}
+            if proxy.startswith('https'):
+                self.proxy = {'https': proxy}
+            else:
+                self.proxy = {'http': proxy}
+        else: 
+            self.proxy = {'https': None}
 
         if not timeout:
-            self.timeout = (8, 15)
+            self.timeout = (2.5, 2.5)
         else:
             self.timeout = timeout
 

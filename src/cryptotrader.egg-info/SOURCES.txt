@@ -14,3 +14,5 @@ src/cryptotrader/api/kraken.py
 src/cryptotrader/ingest/__init__.py
 src/cryptotrader/ingest/data_ingestion.py
 src/cryptotrader/ingest/proxy_server.py
+src/cryptotrader/utils/__init__.py
+src/cryptotrader/utils/logger.py
