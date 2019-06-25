@@ -47,7 +47,7 @@ class Kraken(ExchangeWrapper):
             self.proxy = {'https': None}
 
         if not timeout:
-            self.timeout = (2.5, 2.5)
+            self.timeout = (1, 5)
         else:
             self.timeout = timeout
 

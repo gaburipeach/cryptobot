@@ -14,9 +14,11 @@ import random
 import logging
 import asyncio
 import argparse
+import signal
 
 global PROXY_POOL
 global SCRAPE_FREQ
+
 
 @Logger.logged
 def scrape_trade_history(writer, target_pair, limit):
@@ -42,6 +44,8 @@ def scrape_trade_history(writer, target_pair, limit):
 			# Remove bad proxy from proxy list, grab a new proxy, and then try the call again.
 			logging.error(e)
 			PROXY_POOL.remove_bad_proxy(proxy_id)
+
+
 			proxy_id = PROXY_POOL.get_random_proxy_id()
 			proxy_url = PROXY_POOL.parse_proxy_id(proxy_id)
 			logging.info("Fetching another Proxy URL: %s" % proxy_url)
@@ -88,13 +92,16 @@ def scrape_order_book(writer):
 	t.start()
 
 
+# TODO: Need to change this potentially if we aren't going to be calling this file directly.
 def _parse_args():
 	parser = argparse.ArgumentParser(description="data_ingestion.py")
-	parser.add_argument("--scrape_freq", default=10, help="Determines the frequency between ticks for each target pair.")
+	parser.add_argument("--scrape_freq", default=1, help="Determines the frequency between ticks for each target pair.")
 	parser.add_argument("--trade_history_depth", default=50, help="How many trade histories deep do we want to grab every scrape.")
 	parser.add_argument("--order_book_depth", default=50, help="How many order levels do we want for each scrape.")
+	parser.add_argument("--proxy_pool_size", default=100, help="Determines the size of the proxy pool to draw from is.")
 	# parser.add_argument("--target_pairs" default="all", help='')
-	parser.add_argument("--proxy_pool_size", default=100, help="How big our proxy pool to draw from is.")
+	args = parser.parse_args()
+	return args
 
 
 def main():
@@ -106,7 +113,7 @@ def main():
 	global PROXY_POOL
 	global SCRAPE_FREQ
 
-	logging_level=logging.DEBUG
+	logging_level=logging.INFO
 	logging_format='[~] %(asctime)s:%(levelname)s: %(message)s'
 	logging_filename = './logs/ingest_logs.txt'
 
@@ -114,8 +121,15 @@ def main():
 	logging.basicConfig(level=logging_level,format=logging_format,filename=logging_filename)
 	# loop = asyncio.get_event_loop()
 	# TODO: Add support for multiple pairs. 
-	PROXY_POOL = ProxyPool(pool_size=100)
 
+	args = _parse_args()
+	logging.info("Args: %s" % args)
+	PROXY_POOL = ProxyPool(pool_size=15)
+	SCRAPE_FREQ=args.scrape_freq
+
+
+	pairs = ['btc-usd', 'bch-usd', 'dash-usd', 'ltc-usd', 'eth-usd', 'xmr-usd', 'zec-usd', 'xrp-usd', 'ada-usd', 'eos-usd']
+	file_map = {}
 	# TODO: Figure out best way to handle file directory
 	history_file = open('/home/alex/2019/cryptobot/cryptobot/data/trade_histories.csv', 'w')
 	order_book_file = open('/home/alex/2019/cryptobot/cryptobot/data/order_book.csv', 'w')
@@ -123,19 +137,21 @@ def main():
 	h_writer = csv.writer(history_file, delimiter=',')
 	o_writer = csv.writer(order_book_file, delimiter=',')
 
-	## TODO: ADd ARg Parsing/defaults
 
-	limit=50
-	SCRAPE_FREQ=1
 	# scrape_order_book(o_writer)
-	scrape_trade_history(h_writer, 'bch-usd', limit)
+	scrape_trade_history(h_writer, 'bch-usd', args.trade_history_depth)
 
 	while True:
 		try:
+			signal.alarm(300)
 			PROXY_POOL.refresh_proxy_url_list()
-			time.sleep(5)
-		except:
+			time.sleep(120)
+		except Exception as e:
+			logging.error(e, exc_info=True)
 			logging.error("Error when Refreshing Proxy URL List. Retrying...")
+		else:
+			logging.info("Refresh() finished in time. Resetting alarm...")
+			signal.alarm(0)
 
 
 
@@ -170,3 +186,24 @@ if __name__ == "__main__":
 	# t = threading.Timer(1, scrape_trade_histories, args=(writer,))
 	# t.setDaemon(True)
 	# t.start()
+
+# ERROR STUFF
+
+# # If the error is from read/connection timeout, it's ok. If it's a reset Error or 
+# # connection closed/rejection, then remove it. 
+# if check_bad_conn_error(e):
+# 	logging.info("Removing Bad proxy")
+
+# else:
+# 	logging.info("Proxy Read Timeout -> Resuming...")
+# @Logger.logged
+# def check_bad_conn_error(error):
+# 	e_str = str(error)
+# 	if e_str.contains("Cannot connect"):
+# 		return True
+# 	elif e_str.contains("connect timeout"):
+# 		return True
+# 	elif e_str.contains("SSLError"):
+# 		return True
+
+# 	return True

@@ -32,19 +32,27 @@ class ProxyPool(object):
         host, port = '127.0.0.1', 8888  # by default
         types = [('HTTP', 'High'), 'HTTPS', 'CONNECT:80']
         codes = [200, 301, 302]
-        broker = Broker(max_tries=1)
 
         proxies = asyncio.Queue()
-        broker = Broker(proxies)
+        broker = Broker(proxies, max_tries=2)
         new_list = []
 
-        tasks = asyncio.gather(
-            broker.find(types=['HTTP', 'HTTPS'], limit=limit),
-            self.show(proxies, new_list))
+        try:
+            logging.info("Gathering proxies using ProxyBroker API")
+            tasks = asyncio.gather(
+                broker.find(types=['HTTP', 'HTTPS'], limit=limit),
+                self.show(proxies, new_list))
+            logging.debug("Proxy Gathering Finished.")
+            loop = asyncio.get_event_loop()
+            logging.debug("Got Event Loop.")
+            loop.run_until_complete(tasks)
+            logging.info("Ran until complete.")
+            broker.stop()
+            logging.info("Broker Stopped Successfully.")
+        except Exception as e:
+            logging.error("Error encountered when collecting Proxies in get_proxy_ips().")
+            logging.error(e, exc_info=True)
 
-        loop = asyncio.get_event_loop()
-        loop.run_until_complete(tasks)
-        broker.stop()
         return new_list
 
 
@@ -100,13 +108,20 @@ class ProxyPool(object):
                 # TODO: The issue with using None as a proxy is that it might interfere with rate 
                 #       limiting in the future with calls that require API keys (verifying book, executing orders) 
                 # Elects to add an empty proxy server to the list when we run out of proxies.
-                self.proxy_set.add(None)
+                # self.proxy_set.add(None)
                 logging.info("New Proxy Pool Size: %d" % len(self.proxy_set))
                 logging.info("Added 1 new Proxy to Pool.")
+                # TODO: Change
+                break
         except Exception as e:
             # pass
             logging.error("Error occured when trying to remove proxy URL.")
             logging.error(e, exc_info=True)
+
+        # TODO: Change this. Break out right now if we are under 1.
+        if len(self.proxy_set) < 1:
+            logging.error("Empty proxy list. Exiting...")
+            raise Exception
 
 
     async def get_pages(self, urls, proxy_url):
